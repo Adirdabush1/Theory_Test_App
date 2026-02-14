@@ -16,6 +16,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Root health check
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    service: "theory-test-app-server",
+  });
+});
+
 // === Routes ===
 
 // Auth routes

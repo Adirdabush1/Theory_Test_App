@@ -36,7 +36,6 @@ module.exports = async function (env, argv) {
   config.plugins.push(
     new webpack.DefinePlugin({
       "process.env.EXPO_ROUTER_APP_ROOT": JSON.stringify(appRoot),
-      __EXPO_ROUTER_APP_ROOT__: JSON.stringify(appRoot),
     })
   );
 

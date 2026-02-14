@@ -4,7 +4,7 @@ import { Platform } from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Use the deployed server URL (Render) for all platforms
-const BASE_URL = process.env.EXPO_PUBLIC_API_URL || "https://car-insurance-lvtc.onrender.com"; // override with env if needed
+const BASE_URL = process.env.EXPO_PUBLIC_API_URL || "https://theory-test-app-server.onrender.com"; // override with env if needed
 
 // יצירת Axios instance
 const api = axios.create({

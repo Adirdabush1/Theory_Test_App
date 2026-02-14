@@ -13,6 +13,10 @@ module.exports = async function (env, argv) {
   config.resolve.alias = {
     ...(config.resolve.alias || {}),
     "expo-router/_ctx": path.resolve(__dirname, "expo-router-ctx.web.js"),
+    "@react-navigation/elements/lib/module/useFrameSize": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
   };
   config.resolve.modules = [
     path.resolve(__dirname),

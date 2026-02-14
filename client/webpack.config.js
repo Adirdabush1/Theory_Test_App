@@ -17,6 +17,30 @@ module.exports = async function (env, argv) {
       __dirname,
       "patches/useFrameSize.web.js"
     ),
+    "@react-navigation/elements/lib/module/useFrameSize.js": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
+    "@react-navigation/elements/lib/commonjs/useFrameSize": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
+    "@react-navigation/elements/lib/commonjs/useFrameSize.js": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
+    "@react-navigation/elements/src/useFrameSize": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
+    "@react-navigation/elements/src/useFrameSize.tsx": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
+    "@react-navigation/elements/src/useFrameSize.js": path.resolve(
+      __dirname,
+      "patches/useFrameSize.web.js"
+    ),
   };
   config.resolve.modules = [
     path.resolve(__dirname),

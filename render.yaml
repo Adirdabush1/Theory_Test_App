@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: theory-test-app
+    env: static
+    rootDir: client
+    buildCommand: npm run web-build
+    staticPublishPath: web-build
+    envVars:
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: FACEBOOK_APP_ID
+        sync: false
